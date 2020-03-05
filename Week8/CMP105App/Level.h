@@ -4,6 +4,8 @@
 #include "Framework/Input.h"
 #include <string>
 #include <iostream>
+#include "Ball.h"
+#include "Framework/Collision.h"
 
 
 class Level{
@@ -19,6 +21,12 @@ private:
 	// Default functions for rendering to the screen.
 	void beginDraw();
 	void endDraw();
+
+	Ball Ball_1;
+	Ball Ball_2;
+
+	sf::RectangleShape Ball_1_Hitbox;
+	sf::RectangleShape Ball_2_Hitbox;
 
 	// Default variables for level class.
 	sf::RenderWindow* window;
